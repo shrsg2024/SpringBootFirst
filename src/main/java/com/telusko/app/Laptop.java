@@ -1,11 +1,14 @@
 package com.telusko.app;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 @Component
-public class Laptop {
+@Primary
+public class Laptop implements Computer{
 
     public void compile()
     {
-        System.out.println("Compiling...");
+        System.out.println("Compiling in a laptop");
+
     }
 }
